@@ -12,34 +12,154 @@
     <!-- The description tag is used by search engines -->
 		<meta name="description" content="This is what my page is about">
     <!-- STYLESHEETS Your main 'style.css' should typically be last -->
-		
-		<!-- other stylesheets, e.g. Google fonts -->
-		<!-- your stylesheet -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">	
+
+
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">		<!-- your stylesheet -->
 		<!-- CRITICAL JAVASCRIPT non critical scripts should be at the end of the 
-      body-->
+	  body-->
+	  <script src="js/app.js"></script>
 		<!-- <script src="js/critical-scripts.js" type="text/javascript"></script> -->
 	</head>
 <!-- ------------------------------ BODY ----------------------------------- -->	
 	<body>
 		<!-- the placement of <header>, <main> and <footer> blocks is only a guide for "typical" websites -->
-
+		
 		
 		<main>
-			<div>
-				<h1>My first day in DES221</h1>
-				<h2>I added No adjective with my name to the rest of the class for icebreaker activity</h2>
-				<p>PUT ONE PARAGRAPH OF YOUR EXPERIENCE</p>
-				<ul>
-					<li>Make a website</li>
-					<li>Target photographers</li>
-					<li></li>
-				</ul>
-
+			<header class="container">
+						<ul class="side-nav">
+							<li class="nav-item">
+								<h2 class="nav-link"><a href="#top">Back to Top</a></h2>
+							</li>
+							<li class="nav-item">
+								<h2 class="nav-link"><a href="#pollution">Water Pollution</a></h2>
+							</li>
+							<li class="nav-item">
+								<h2 class="nav-link"><a href="#drilling">Offshore Drilling</a></h2>
+							</li >
+							<li class="nav-item">
+								<h2 class="nav-link"><a href="#noise">Ocean Noise</a></h2>
+							</li>
+							<li class="nav-item">
+								<h2 class="nav-link"><a href="#trash">Trash</a></h2>
+							</li>
+							<li class="nav-item">
+								<h2 class="nav-link"><a href="#acid">Acidification</a></h2>
+							</li>
+						</ul>
 				
+			</header>
+
+			<div id="top" class="container-fluid above-sea">
+				
+				<div class="container-fluid hero">
+					<div class="container hero-container">
+						<div class="hero-text">
+							<h1 class="align-center">Our Effect on the Ocean</h1>
+							<p>Our oceans cover more than 70% of our plant, oceans are among the earth’s most valuable natural resources. They govern the weather, clean the air, help feed the world, and provide a living for millions. They also are home to most of the life on earth, from microscopic algae to the blue whale, the largest animal on the planet. Yet we’re bombarding them with pollution. By their very nature—with all streams flowing to rivers, all rivers leading to the sea—the oceans are the end point for so much of the pollution we produce on land, however far from the coasts we may be. And from dangerous carbon emissions to choking plastic to leaking oil to constant noise, the types of ocean pollution humans generate are vast. As a result, collectively, our impact on the seas is degrading their health at an alarming rate. Below, is an interactive experience taking you from sea level to the coral reefs, showing you our effect on the oceans at each level.</p>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row switch">
+						
+						<div class="col-xl-7 info-centre overflow-auto switch-r" id="pollution">
+							<h3>Pollution</h3>
+							<p>Eighty percent of pollution to the marine environment comes from the land. One of the biggest sources is called nonpoint source pollution, which occurs as a result of runoff.<span id="dotspoll">...</span>
+								<span id="morepoll">Nonpoint source pollution includes many small sources, like septic tanks, cars, trucks, and boats, plus larger sources, such as farms, ranches, and forest areas. Millions of motor vehicle engines drop small amounts of oil each day onto roads and parking lots. Much of this, too, makes its way to the sea.<br><br>
+									Some water pollution actually starts as air pollution, which settles into waterways and oceans. Dirt can be a pollutant. Topsoil or silt from fields or construction sites can run off into waterways, harming fish and wildlife habitats.<br><br>
+									Nonpoint source pollution can make river and ocean water unsafe for humans and wildlife. In some areas, this pollution is so bad that it causes beaches to be closed after rainstorms.<br><br>
+									More than one-third of the shellfish-growing waters of the United States are adversely affected by coastal pollution.</span></p>
+
+							<button onclick="pollmore()" id="btnpoll">Read more</button>
+
+						</div>
+						<div class="col-xl-5 switch-l">
+							<img class="info-pic" src="/img/pollution.png" alt="pollution">
+						</div>
+					</div>
+				</div>
 			</div>
+			<div class="container-fluid below-sea">
+				
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-5">
+							<img class="info-pic" src="/img/drill.png" alt="drill">
+						</div>
+						<div class="col-xl-7 info-centre overflow-auto" id="drilling">
+							<h3> Offshore Drilling</h3>
+							<p>At sea level, the oil and gas industry’s routine operations emit toxic by-products, release high levels of greenhouse gases, and lead to thousands<span id="dotsdrill">...</span>
+								<span id="moredrill">of spills in U.S. waters annually. That oil can linger for decades and do irreversible damage to delicate marine ecosystems. Take the 1989 Exxon Valdez tanker spill in Alaska’s Prince William Sound, from which oil still remains, or the BP Deepwater Horizon offshore drilling disaster in 2010, which spread millions of gallons of oil throughout the Gulf of Mexico. But even smaller spills pollute the ocean (and the air) with long-lasting impacts. Even the most advanced cleanup efforts remove only a fraction of the oil, and sometimes they use hazardous technologies. Chemical dispersants used in the largest spill response efforts—1.8 million gallons were released into the Gulf after the BP disaster—are dangerous pollutants themselves.</span></p>
+
+							<button onclick="drillmore()" id="btndrill">Read more</button>
+
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-7 info-centre overflow-auto switch-r" id="noise">
+								<h3>Ocean Noise</h3>
+								<p>The ocean is far from a “silent world.” Sound waves travel farther and faster in the sea’s dark depths than they do in the air.<span id="dotsnoise">..</span><span id="morenoise">Many marine mammals like whales and dolphins, in addition to fish and other sea creatures, rely on communication by sound to find food, mate, and navigate. But an increasing barrage of human-generated ocean noise pollution is altering the underwater acoustic landscape, harming—and even killing—marine species worldwide. <br><br>
+									Consider the incessant din of the roughly 60,000 commercial tanker and container ships that ply the seas at any given time. The underwater racket that results creates a kind of “smog” that reaches nearly every corner of the ocean and shrinks the sensory range of marine wildlife. High-intensity sonar used by the U.S. Navy for testing and training causes some of the same effects—and has been linked to mass whale strandings, too.<br><br>
+									Meanwhile, in the hunt for offshore oil and gas, ships equipped with high-powered air guns fire compressed air into the water every 10 to 12 seconds for weeks to months on end. Traveling as far as 2,500 miles, these deafening seismic blasts disrupt foraging, mating, and other vital behaviors of endangered whales (and may ultimately push some, such as the North Atlantic right whale, to extinction). The blasts lead some commercial fish species to abandon their habitat—a direct hit on coastal economies dependent on catch rates; they also injure and kill marine invertebrates, including scallops, crabs, and squid.
+									</span></p>
+
+									<button onclick="noisemore()" id="btnnoise">Read more</button>
+							</div>
+							<div class="col-xl-5 switch-l">
+								<img class="info-pic" src="/img/noise.png" alt="noise">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xl-5">
+								<img class="info-pic" src="/img/trash.png" alt="trash">
+							</div>
+							<div class="col-xl-7 info-centre overflow-auto" id="trash">
+								<h3>Trash</h3>
+								<p>The majority of the garbage that enters the ocean each year is plastic—and here to stay.<span id="dotstrash">..</span><span id="moretrash">That’s because unlike other trash, the single-use grocery bags, water bottles, drinking straws, and yogurt containers, among eight million metric tons of the plastic items we toss (instead of recycle), won’t biodegrade. Instead, they can persist in the environment for a millennium, polluting our beaches, entangling marine life, and getting ingested by fish and seabirds. <br><br>
+									Where does all this debris originate? While some is dumped directly into the seas, an estimated 80 percent of marine litter makes its way there gradually from land-based sources―including those far inland―via storm drains, sewers, and other routes. (An excellent reason why we should all reduce plastic pollution, no matter where we live.) Oil from boats, airplanes, cars, trucks, and even lawn mowers is also swimming in ocean waters. Chemical discharges from factories, raw sewage overflow from water treatment systems, and stormwater and agricultural runoff add other forms of marine-poisoning pollutants to the toxic brew.
+									</span></p>
+
+									<button onclick="trashmore()" id="btntrash">Read more</button>
+							</div>
+							
+						</div>
+						<div class="row">
+							<div class="col-xl-7 info-centre overflow-auto switch-r" id="acid">
+								<h3>Acidification</h3>
+								<p>When we burn fossil fuels, we don’t pollute just the air but the oceans, too. Indeed, today’s seas absorb as much as a quarter of all man-made carbon emissions, which changes the pH of surface waters and leads to acidification.<span id="dotsacid">..</span><span id="moreacid">This problem is rapidly worsening—oceans are now acidifying faster than they have in some 300 million years. It’s estimated that by the end of this century, if we keep pace with our current emissions practices, the surface waters of the ocean could be nearly 150 percent more acidic than they are now.<br><br>
+									So what happens when the ocean’s chemistry is knocked out of whack? Marine ecosystems—and the coastal economies that depend on them—go out of whack, too. Take reefs and shellfish, for starters. To build their shells and skeletons, creatures like mussels, clams, coral, and oysters require calcium carbonate (the same compound found in chalk and limestone). But the ocean’s carbonate levels go down when acidity levels rise, threatening the survival of these animals. Bivalves are at the bottom of the food chain, so these effects ripple up to many fish, seabirds, and marine mammals. More-acidic waters also contribute to the bleaching of coral reefs and make it harder for some types of fish to sense predators and for others to hunt prey.<br><br>
+									Meanwhile, ocean acidification threatens us land-dwellers, too. The billion-dollar American shellfish industry is the economic backbone of myriad coastal communities, from Louisiana to Maine to Maryland. Already, declining harvests linked to more-acidic waters are estimated to have cost the Pacific Northwest’s oyster industry nearly $110 million and 3,200 jobs.
+									</span></p>
+
+								<button onclick="acidmore()" id="btnacid">Read more</button>							</div>
+							<div class="col-xl-5 switch-l">
+								<img class="info-pic" src="/img/acid.png" alt="acid">
+							</div>
+						</div>
+				</div>
+				
+				
+
+			</div>
+
+			<div class="container-fluid donate-box">
+				<div class="container">
+					this is where you donate or something
+				</div>
+			</div>
+
 		</main>
 
+		<footer>
 
+			<div class="footnote">Lochlan Brown | 2020</div>
+		</footer>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<!-- this is where non-load-critical javascript should be placed i.e. the document can sill load properly with out it -->
 		<!--		<script src="js/scripts.js" type="text/javascript"></script>-->
 	</body>
