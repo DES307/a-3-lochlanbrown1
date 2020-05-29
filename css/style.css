@@ -3,12 +3,13 @@
 
 p {
     font-family: 'Rubik', sans-serif;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 
 h1 {
     font-family: 'Rubik', sans-serif;
     font-size: 42pt;
+    margin: 0;
 }
 
 h2 {
@@ -67,10 +68,15 @@ header {
     min-height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     background-image: url("/img/clouds.png");
     background-size: cover;
     background-position: bottom;
+    align-content: center;
+}
+
+.hero-text {
+    max-height: 350px;
 }
 
 .hero-container {
@@ -85,7 +91,10 @@ header {
     padding: 0px;
 }
 
-
+img.logo-top {
+    width: 400px;
+    margin: 0 auto 50px auto;
+}
 
 .info-centre {
     text-align: center;
@@ -151,6 +160,47 @@ img.info-pic {
     order:0;
 }
 
+.side-title {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    padding: 15px 20px;
+}
+
+footer {
+    background-color: #2e2e2e;
+    padding: 50px 0 0 0;
+    color: white;
+}
+
+.form-footer {
+    background-color: #08bee4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 20pt;
+}
+
+img.logo-foot {
+    width: 100%;
+}
+
+.sub-subtitle {
+    text-align: center;
+   
+}
+
+.sub-form {
+    padding: 20px 200px; 
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 20px;
+}
+
+.first-name {
+    margin-bottom: 10px;
+}
 
 @media only screen and (max-width: 1850px) {
     ul.side-nav {
@@ -184,6 +234,10 @@ img.info-pic {
         order:1;
     }
 
+    img.logo-foot {
+        width: 60%;
+    }
+
   }
 
   @media only screen and (max-width: 630px) {
@@ -195,5 +249,10 @@ img.info-pic {
     h1 {
         font-size: 28pt;
     }
+
+    img.logo-top {
+        width: 60vw;
+    }
+
 
   }
